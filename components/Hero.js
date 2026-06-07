@@ -26,7 +26,7 @@ export default function Hero() {
           <a href="/book" className="px-8 py-3 border-2 border-gold text-gold hover:bg-gold hover:text-black transition-colors font-light tracking-wide">
             Reserve Your Event
           </a>
-          <a href="#experience" className="px-8 py-3 text-gold hover:text-gold/70 transition-colors font-light tracking-wide border-b border-gold">
+          <a href="#experience" className="px-8 py-3 text-gold hover:text-gold/70 transition-colors font-light tracking-wide">
             Explore More
           </a>
         </div>
