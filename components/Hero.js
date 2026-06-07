@@ -8,14 +8,21 @@ export default function Hero() {
       
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl">
-        <h1 className="text-5xl md:text-7xl font-serif text-gold mb-6 tracking-wide">
-          CEPEDAS
-        </h1>
+        {/* Logo Image */}
+        <div className="mb-8 flex justify-center">
+          <img 
+            src="/logo.png" 
+            alt="Cepedas Event Center Logo"
+            style={{ maxWidth: '300px', height: 'auto' }}
+            className="drop-shadow-lg"
+          />
+        </div>
+
         <p className="text-lg md:text-xl text-gray-300 mb-8 font-light leading-relaxed">
           An elegant venue designed for your most celebrated moments. 334 guests, 
           premium amenities, and flawless execution.
         </p>
-        <div className="flex gap-4 justify-center">
+        <div className="flex gap-4 justify-center flex-wrap">
           <a href="/book" className="px-8 py-3 border-2 border-gold text-gold hover:bg-gold hover:text-black transition-colors font-light tracking-wide">
             Reserve Your Event
           </a>
