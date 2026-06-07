@@ -1,44 +1,51 @@
-'use client';
+﻿'use client';
 
 export default function ValueProps() {
-  const values = [
+  const features = [
     {
-      icon: '✨',
-      title: 'Elegance',
-      description: 'Pristine spaces designed for your most celebrated moments',
+      title: "Elegant Spaces",
+      description: "Pristine rooms designed with refinement and attention to detail for your special occasion."
     },
     {
-      icon: '👥',
-      title: 'Capacity',
-      description: '334 Seated Guests + Standing Room Available',
+      title: "Capacity & Flexibility",
+      description: "334 seated guests plus standing room available. Adaptable layouts for weddings, galas, and celebrations."
     },
     {
-      icon: '🎯',
-      title: 'Full Service',
-      description: 'Bridal Suite, Prep Area, Premium AV Systems',
-    },
+      title: "Premium Services",
+      description: "Bridal suite, prep area, full AV systems, and dedicated event coordination for seamless execution."
+    }
   ];
 
   return (
-    <section className="section-padding container-max">
-      <div className="grid md:grid-cols-3 gap-8">
-        {values.map((value, index) => (
-          <div
-            key={index}
-            className="p-8 bg-white/2 border border-gold-600/20 hover:border-gold-600/40 transition-all hover:bg-gold-600/5 text-center group"
-            style={{
-              animation: `slideInUp 0.6s ease-out ${index * 0.1}s both`,
-            }}
-          >
-            <div className="text-5xl mb-4 inline-block group-hover:scale-110 transition-transform">
-              {value.icon}
+    <section id="spaces" className="w-full py-24 bg-black border-y border-gold/20">
+      <div className="container-max px-6">
+        <div className="max-w-3xl mb-16">
+          <h2 className="text-4xl md:text-5xl font-serif text-gold mb-6 tracking-wide">
+            Why Choose Cepedas
+          </h2>
+          <p className="text-gray-400 font-light leading-relaxed text-lg">
+            We provide the sophisticated setting and expert service your event deserves.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-12">
+          {features.map((feature, idx) => (
+            <div key={idx} className="border-l border-gold/30 pl-6">
+              <h3 className="text-2xl font-serif text-gold mb-4">
+                {feature.title}
+              </h3>
+              <p className="text-gray-400 font-light leading-relaxed">
+                {feature.description}
+              </p>
             </div>
-            <h3 className="text-xl font-bold gold mb-3 group-hover:text-gold-accent transition">
-              {value.title}
-            </h3>
-            <p className="text-gray-400 text-sm leading-relaxed">{value.description}</p>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        <div className="mt-16 pt-12 border-t border-gold/20">
+          <p className="text-gray-500 font-light text-center">
+            Tulsa, Oklahoma • 918.830.3692 • info@cepedasec.com
+          </p>
+        </div>
       </div>
     </section>
   );
