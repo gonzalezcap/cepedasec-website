@@ -10,7 +10,7 @@ export default function EventShowcase() {
     {
       title: 'Quinceañeras',
       description: 'Celebrate this momentous milestone in elegance. A space designed for joy, tradition, and the radiance of the guest of honor.',
-      image: 'https://images.unsplash.com/photo-1519225421923-7bcbcf2099f1?w=400&h=400&fit=crop'
+      image: 'https://images.unsplash.com/photo-1517457373614-b7152f80205d?w=400&h=400&fit=crop'
     },
     {
       title: 'Corporate Events',
